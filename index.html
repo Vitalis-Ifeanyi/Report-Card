@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Card</title>
+
+    <style>
+        *{margin: 0px;
+            padding: 0px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            border: 3px solid BLACK;
+            text-align: center;
+            width: 800px;
+        }
+        h1{
+            text-shadow: 2px 2px  6px  orangered ;
+        }
+        .images{
+            margin: 10px;
+        }
+        .header{
+            display: flex;
+            background-color: navy;
+            padding-top:20px;
+            color: white;
+        }
+        .profile table, .profile th{
+            color: black;
+            margin-left: auto;
+            margin-right: auto;
+            border: none;
+            padding: 10px;
+        }
+        .report table{
+            margin: 20px;
+            height: 400px;
+        }
+        .report table, .report tr, .report th, .report td{
+            width: 650px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .report th{
+            background-color: navy;
+            border: none;
+            color: azure;
+        }
+        .table2{
+            text-align: center;
+            border: none;
+            width: 60%;
+            margin-left: auto;
+        }
+        .table2 table, tr, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin-top: 30px;
+            width: 400px;
+        }
+        .table2 th{
+            background-color: navy;
+            border: none;
+            color: azure;
+        }
+        textarea{
+            max-width: 500px;
+            max-height: 200px;
+        }
+        input{
+            border: none;
+            outline: none;
+            text-align: center;
+            border-bottom: 2px solid black;
+        }
+        .remarks{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin: 20px;
+            text-align: right;
+        }
+
+        @media(width<=500px){
+            .profile{
+                border: 1px solid;
+                width: 98vw;
+            }
+            .profile>table{
+            border: 1px solid red;
+            width: 98vw;
+            margin: 0px;
+            padding: 0px;
+            }
+            .profile input{
+                width: 100px;
+            }
+            .container{
+                align-items: center;
+                justify-content: center;
+                margin: 20px;
+                width: 98vw;
+                overflow: hidde
+            }
+            .header{
+                width: 98vw;
+                flex-direction: column;
+            }
+            .header img{
+                width: 60px;
+            }
+            .header h1{
+                font-size: larger;
+            }
+            .report{
+                border: 1px solid;
+                width: 98vw;
+                overflow: scroll;
+            }
+            .table2{
+                width:85%;
+                overflow: scroll;
+                margin-inline: auto;
+            }
+            .textarea{
+                min-width: 20vw;
+            }
+            .remarks{
+                width: 98vw;
+                border: 1px solid;
+                margin: 0px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div  class="images"><img src="/assets/School logo.jpg" alt="God's Favour Logo" width="100px"></div>
+            <div class="schoolname">
+            <h1>GOD'S GLORY MODEL SCHOOLS, NURSERY AND PRIMARY</h1>
+            <h2>REPORT CARD</h2>
+            </div>
+        </div>
+        <div class="profile">
+            <table>
+            <tr>
+            <th><label for="">STUDENT NAME:</label>
+            <input type="text" placeholder="Vitalis Ifeanyi"></th>
+            <th><label for="">CLASS/SECTION:</label>
+            <input type="text"></th>
+            </tr>
+            <tr>
+            <th><label for="">SCHOOL YEAR:</label>
+            <input type="text"></th>
+            <th><label for="">TEACHER NAME:</label>
+            <input type="text"></th>
+            </tr>
+            </table>
+        </div>
+        <div class="report">
+            <table>
+                <tr>
+                    <th>Subject</th>
+                    <th>1<sup>st</sup> Term</th>
+                    <th>2<sup>nd</sup> Term</th>
+                    <th>3<sup>rd</sup> Term</th>
+                    <th>4<sup>th</sup> Term</th>
+                    <th>Total</th>
+                    <th>Obtained</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <td>Reading</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Language</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Spelling</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Writing</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Mathematics</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Social Studies</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Physical Education</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Art</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Music</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Extracurriclar</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="table2">
+            <table>
+                <tr>
+                    <th>Terms Based Grades</th>
+                    <th>1<sup>st</sup> Term</th>
+                    <th>2<sup>nd</sup> Term</th>
+                    <th>3<sup>rd</sup> Term</th>
+                    <th>4<sup>th</sup> Term</th>
+                </tr>
+                <tr>
+                    <td>Quarterly Grade</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Average<br> Grade</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="remarks">
+            <h3>TEACHER'S FEEDBACK</h3>
+        <textarea name="" id=""></textarea><br><br>
+        <label for="">Total School Days:</label>
+        <input type="text">
+        <label for="">Attended:</label>
+        <input type="text">
+        <label for="">Absent:</label>
+        <input type="text">
+
+        </div>
+    </div>
+    
+</body>
+</html>
